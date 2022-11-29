@@ -1,0 +1,165 @@
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.head,
+.left-arm,
+.torso,
+.right-arm,
+.left-leg,
+.right-leg,
+.middle-part {
+    background-color: black;
+}
+
+.head {
+    width: 200px;
+    margin: 0px auto;
+    height: 150px;
+    border-radius: 200px 200px 0 0;
+    margin-bottom: 10px;
+}
+
+.eyes {
+    display: flex;
+}
+
+
+.head:hover {
+    width: 300px;
+    height: 160px;
+
+    transition: 1s ease-in-out;
+    transition: scale(1.1)
+}
+
+.upper-body {
+    width: 300px;
+    height: 120px;
+    display: flex;
+
+}
+
+.left-arm,
+.right-arm {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+.left-arm {
+    margin-right: 10px;
+}
+
+.right-arm {
+    margin-left: 10px;
+}
+
+.torso {
+    width: 200px;
+    height: 170px;
+    border-radius: 0 0 50px 50px;
+
+
+}
+
+.lower-body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-leg,
+.right-leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+}
+
+.middle-part {
+    width: 20px;
+    height: 70px;
+    border-radius: 0 0 50px 50px;
+
+}
+
+
+
+.middle-part:hover {
+
+    height: 340px;
+    transform: rotateX(30deg)
+}
+
+.left-leg {
+    margin-left: 45px;
+}
+
+.middle-part {
+    margin-left: 15px;
+    position: relative;
+}
+
+.left-leg:hover,
+.left-arm:hover {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(30deg);
+}
+
+.right-leg:hover,
+.right-arm:hover {
+    transform: rotate(-30deg);
+}
+
+.left-arm:hover,
+.right-arm:hover {
+    width: 50px;
+    height: 150px;
+    transform: 1s ease;
+}
+
+.right-leg {
+    margin-right: 0 auto;
+    margin-left: 35px;
+}
+
+.left-eye,
+.right-eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.torso:hover {
+    transform: rotateX(30deg);
+
+}
+
+.left-eye {
+    /* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+.right-eye {
+    position: relative;
+    top: 100px;
+    left: 120px;
+}
